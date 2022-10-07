@@ -1,0 +1,104 @@
+header {
+	max-height: 20vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header h1 {
+	color: #fff;
+	font-size: 6.4rem;
+	font-weight: 700;
+	line-height: 7.8rem;
+
+	display: flex;
+	gap: 10px;
+
+	overflow: hidden;
+}
+
+header span {
+	color: #fff;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+
+	margin-top: 8px;
+}
+
+header h1 ul {
+	list-style: none;
+	display: flex;
+}
+
+header ul li:nth-child(1) {
+	position: relative;
+	animation: animate 2s;
+	animation-fill-mode: backwards;
+}
+
+header ul li:nth-child(2) {
+	position: relative;
+	animation: animate 2s;
+	animation-delay: 0.25s;
+	animation-fill-mode: backwards;
+}
+
+header ul li:nth-child(3) {
+	position: relative;
+	animation: animate 2s;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+
+header ul li:nth-child(4) {
+	position: relative;
+	animation: animate 2s;
+	animation-delay: 1s;
+	animation-fill-mode: backwards;
+}
+
+header ul li:nth-child(5) {
+	position: relative;
+	animation: animate 2s;
+	animation-delay: 1.5s;
+	animation-fill-mode: backwards;
+}
+
+header ul li:nth-child(6) {
+	position: relative;
+	animation: animate 2s;
+	animation-delay: 2s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes animate {
+	0% {
+		bottom: -100px;
+	}
+
+	100% {
+		bottom: 0;
+	}
+}
+
+header button {
+	width: 300px;
+	height: 46px;
+
+	padding: 10px;
+
+	font-weight: 700;
+	font-size: 2.2rem;
+	line-height: 2.4rem;
+
+	cursor: pointer;
+
+	border-radius: 8px;
+
+	background-color: #ff6663;
+}
+
+header button:hover {
+	background-color: #d45957;
+}
