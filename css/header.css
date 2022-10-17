@@ -82,6 +82,20 @@ header ul li:nth-child(6) {
 	}
 }
 
+header select {
+	width: 300px;
+	height: 46px;
+
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 2rem;
+	font-family: "Fuzzy Bubbles", cursive;
+
+	overflow: hidden;
+
+	border-radius: 8px;
+}
+
 header button {
 	width: 300px;
 	height: 46px;

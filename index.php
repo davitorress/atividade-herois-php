@@ -13,6 +13,8 @@
 	</head>
 	<body>
 		<?php
+			error_reporting(false);
+
 			$universeMarvel = ["marvel", "https://i.pinimg.com/originals/e6/01/46/e60146b3187908f5a06c17620d9a027e.png", "Logo da Marvel", "150px"];
 			$marvelHeroes = [
 				["ironMan", "homem de ferro", [
@@ -37,7 +39,7 @@
 				]]
 			];
 
-			$heroPosition = 0;
+			$heroPosition = $_POST["heroId"];
 		?>
 
 		<div id="page">
@@ -47,7 +49,18 @@
 					<span>Sua escolha nos universos dos quadrinhos!</span>
 				</div>
 
-				<!-- <button>Escolher Herói</button> -->
+				<form action="index.php" method="post">
+					<select name="heroId" id="heroId" required>
+						<option value="" selected disabled>Selecione o herói</option>
+						<option value="0">Homem de Ferro</option>
+						<option value="1">Doutor Estranho</option>
+						<option value="2">Feiticeira Escarlate</option>
+						<option value="3">Thor</option>
+						<option value="4">Groot</option>
+					</select>
+
+					<button type="submit">Escolher Herói</button>
+				</form>
 			</header>
 
 			<main id="main">
